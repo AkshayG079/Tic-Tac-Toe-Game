@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="backbtn" class="backbtn">Back</div>
+    <div class="container">
+        <div class="result" id="result"> </div>
+        <div id="playerShow"></div>
+        <div class="buttons">
+            <button class="button"></button>
+            <button class="button"></button>
+            <button class="button"></button>
+            <button class="button"></button>
+            <button class="button"></button>
+            <button class="button"></button>
+            <button class="button"></button>
+            <button class="button"></button>
+            <button class="button"></button>
+        </div>
+        <button id="restartBtn" type="button">Restart</button>
+    </div>
+
+    <div class="popup">
+        <p id="message"></p>
+        <button id="newGame">New Game</button>
+    </div>
+
+    <div class="starter" id="starter">
+        <h1>Tic Tac Toe</h1>
+
+        <div class="starterDisplay" id="starterDisplay">
+            <div class="customBtn">
+                <button id="singlePlayerBtn" class="btn">Single Player</button>
+                <button id="twoPlayerBtn" class="btn">Two Player</button>
+            </div>           
+        </div>
+
+        <div id="twoPlayerShow">
+            <div class="input-group">
+                <div class="heading">
+                    <h1>Player Vs Player</h1>
+                </div>
+                <label class="mg" for="player1"> Player 1
+                    <textarea name="player1" id="player1" placeholder="Enter name"></textarea>
+                </label>
+                <label class="mg" for="player2"> Player 2
+                    <textarea name="player2" id="player2" placeholder="Enter name"></textarea>
+                </label>
+            </div>
+
+            <small>Which one have 1st turn</small>
+            <div class="check-group">
+                <label for="selectPlayer1">
+                    <input type="radio" name="player" value="player1" id="selectPlayer1" checked>Player 1
+                </label>
+
+                <label for="selectPlayer2">
+                    <input type="radio" name="player" value="player2" id="selectPlayer2">Player 2
+                </label>
+            </div>
+            <button id="startBtnPP" class="startBtn" type="button">Play</button>
+        </div>
+
+        <div id="singlePlayerShow">
+            <h1>Player Vs Computer</h1>
+            <div class="input-group">
+                <label class="mg" for="playerComp"> Player
+                    <textarea name="playerComp" id="playerComp" placeholder="Enter name"></textarea>
+                </label>
+            </div>
+            <button id="startBtnPC" class="startBtn" type="button">Play</button>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
